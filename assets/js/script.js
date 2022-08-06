@@ -1,16 +1,28 @@
 // create variables to be used for multiple choice quiz:
+var startQuizEl = document.querySelector("#start-btn");
+var timerEL = document.querySelector("#time-left");
+var hideStartQuiz = document.querySelector("#start");
+var questionEL = document.querySelector("#questions");
+var answerChoiceEl = document.querySelector("#answer-choice");
 
 
+//Setup Start Quiz function
+var startQuiz = function() {
 
+    // In the click event handler function make the heading "Coding Quiz!" and rules disappear
+    if (hideStartQuiz === "none") {
+        hideStartQuiz.style.display = "block";
+    }
+    else {
+        hideStartQuiz.style.display = "none";
+    }
 
-//Setup a click event / function to start a timer when the "Start Quiz!" button is clicked:
-
-    // In the click event handler function make the heading "Coding Quiz!" disappear
+    // Function to start a timer when "Start Quiz!" button is clicked.
 
     // Show the first question and set of answers 
 
 
-
+} // End Start Quiz Function
 
 // Setup a questions function to display question with answer choices.
 

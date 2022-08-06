@@ -40,18 +40,18 @@
             </p>
 
             <div class="start-btn">
-                <button class="btn" onclick="startQuiz()">Start Quiz!</button>
+                <button class="btn" id="start-btn" onclick="startQuiz()">Start Quiz!</button>
             </div>
 
 
         </section>
 
         <!-- Section for Quiz Questions -->
-        <section class="quiz" id="questions">
+        <section class="hide" id="questions">
 
             <h3 id="question-title"></h3>
 
-            <div class="answers" id="answer-choices">
+            <div class="answers" id="answer-choice">
 
             </div>
 
@@ -59,8 +59,8 @@
 
         <!-- Section for end screen after all questions are answered, time ran out -->
 
-        <section class="end" id="end-screen">
-            <h3>All Done!</h3>
+        <section class="hide" id="end-screen">
+            <h3 id="end-quiz-title"></h3>
 
         </section>
 
