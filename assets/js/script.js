@@ -1,4 +1,36 @@
 // Create an array for all of the question objects
+var myQuestions = [
+	{
+		question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+		answers: {
+			a: "Console Log",
+			b: "Terminal/Bash",
+			c: "For Loops",
+            d: "Javascript",
+		},
+		correctAnswer: "a"
+	},
+	{
+		question: "Commonly used data types DO NOT include ",
+		answers: {
+			a: "Strings",
+			b: "Booleans",
+			c: "Alerts",
+            d: "Numbers",
+		},
+		correctAnswer: "c"
+	},
+    {
+		question: "What can be stored within Arrays in Javascript?",
+		answers: {
+			a: "Numbers and Strings",
+			b: "Other Arrays",
+			c: "Booleans",
+            d: "All of the Above",
+		},
+		correctAnswer: "d"
+	},
+];
 
 
 
