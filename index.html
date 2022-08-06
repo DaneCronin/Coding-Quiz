@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,55 +9,60 @@
     <title>Coding Quiz!</title>
 
 </head>
+
 <body>
     <!-- Header Section -->
     <header>
 
         <!-- Navigation to High Scores -->
-       <nav>
+        <nav>
 
             <a href="./high-scores.html">View High Scores</a>
 
         </nav>
 
-        <div class="timer">Time:</div>
+        <div class="timer">Time:<span id="time-left"> 0 </span></div>
 
 
     </header>
 
     <!-- Main Body of Page -->
-    <main>
+    <main class ="wrapper">
 
         <!-- Section for "Start Quiz Display"-->
-        <section class ="start-quiz">
-        <h1>CODING QUIZ!</h1>
+        <section class="start-quiz" id ="start">
 
-        
-        <p>Try to answer the following code-related questions within the time limit. 
-        <br>Keep in mind that incorrect answers will penalize your score/time by ten seconds!
-        </p>
+            <h1>CODING QUIZ!</h1>
 
-        <div class="start-btn">
-             <button class ="btn" id ="start-btn" onclick="startQuiz()">Start Quiz!</button>
-        </div>
 
-     
-         </section>
+            <p>Try to answer the following code-related questions within the time limit.
+                <br>Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+            </p>
+
+            <div class="start-btn">
+                <button class="btn" onclick="startQuiz()">Start Quiz!</button>
+            </div>
+
+
+        </section>
 
         <!-- Section for Quiz Questions -->
-         <section class = "quiz" id ="questions">
-            
-            <h3>** CURRENT QUESTION? **</h3>
+        <section class="quiz" id="questions">
 
-            <ol class="quiz questions">
-                <li id="1">** QUIZ QUESTION ** </li>
-                <li id="2">** QUIZ QUESTION ** </li>
-                <li id="3">** QUIZ QUESTION ** </li>
-                <li id="4">** QUIZ QUESTION ** </li>
-            </ol>
+            <h3 id="question-title"></h3>
 
+            <div class="answers" id="answer-choices">
 
-         </section>
+            </div>
+
+        </section>
+
+        <!-- Section for end screen after all questions are answered, time ran out -->
+
+        <section class="end" id="end-screen">
+            <h3>All Done!</h3>
+
+        </section>
 
     </main>
 
@@ -68,7 +74,9 @@
         &copy;2022 by Dane Cronin
 
     </footer>
-    
+
     <script src="./assets/js/script.js"></script>
+
 </body>
+
 </html>
