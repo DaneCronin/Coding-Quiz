@@ -15,14 +15,19 @@ var startQuiz = function() {
     }
     else {
         hideStartQuiz.style.display = "none";
-    }
+    };
+     
+    // Return Quiz - Show the first question and set of answers 
+
+}; // End Start Quiz Function
 
     // Function to start a timer when "Start Quiz!" button is clicked.
+   
+ 
+    
 
-    // Show the first question and set of answers 
 
 
-} // End Start Quiz Function
 
 // Setup a questions function to display question with answer choices.
 
