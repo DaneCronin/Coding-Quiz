@@ -26,23 +26,24 @@ var startQuiz = function() {
 }; // End Start Quiz Function
 
 
-    // Function to start a timer when "Start Quiz!" button is clicked.
-    document.getElementById("#start-btn").addEventListener("click", function(countdown));
+//     // Function to start a timer when "Start Quiz!" button is clicked.
+// document.getElementById("#start-btn").addEventListener("click", function() {
 
-function countdown() {
-    var timeLeft= 75;
+//     var timeLeft= 75;
 
-    var timeInterval = setInterval(function () {
-        if(timeLeft > 0) {
-            timeLeft --; 
-        }
-        else {
-            clearInterval(timeInterval);
-            return "You're out of time!";
-        }
+//     var timeInterval = setInterval(function fucntion1() {
+//         document.getElementById("#time-left").innerHTML = timeLeft;
+//         timeLeft --; 
+//         if(timeLeft <= 0) {
+//             clearInterval(timeInterval);
+//             alert("Sorry, out of time");
+//         }
 
-    }, 1000);
-        }
+//     }, 1000);
+
+//     console.log(countdown);
+
+//         });
 
     
  
