@@ -9,12 +9,91 @@
     --font-family: Helvetica, Arial, sans-serif;
     --primary-bgcolor: #fff;
     --font-color: #000;
+    --primary-stylecolor: rgb(77, 3, 77);
 }
 
 /* General Body Styling */
-body {
+main {
     background-color: var(--primary-bgcolor);
     color: var(--font-color);
     font-family: var(--font-family);
+    height: 600px;
+    width: auto;
 
+}
+
+/* Header and Nav Styling for High Scores Page Link */
+
+header{
+    width: auto;
+    display: flex;
+    margin: 25px, 15px;
+}
+
+nav a {
+    display: flex;
+    align-items: left;
+    margin: 25px, 20px;
+    padding: 5px;
+    text-decoration: none;
+    font-family: var(--font-family);
+    color: rgb(77, 3, 77);
+    
+}
+
+header .timer {
+    display: flex;
+    margin: 25px, 20px;
+    font-family: var(--font-family);
+
+}
+
+/* Question Section Styling */
+
+.start-quiz {
+    margin: 45px, 20px;
+    padding: 15px, 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.start-btn {
+    margin: 45px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    margin: 10px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+main p {
+    font-size: 22px;
+
+}
+
+.btn {
+    margin: 55px, 25px;
+    padding: 15px;
+    background-color: rgb(77, 3, 77);
+    font-size: 24px;
+    color: #fff;
+
+}
+
+/* Footer Styling */
+
+footer {
+    margin: 25px;
+    display: flex;
+    border-top: 2px solid grey;
+    width: auto;
+    
 }
