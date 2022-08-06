@@ -1,3 +1,8 @@
+// Create an array for all of the question objects
+
+
+
+
 // create variables to be used for multiple choice quiz:
 var startQuizEl = document.querySelector("#start-btn");
 var timeLeftEL = document.querySelector("#time-left");
@@ -6,9 +11,13 @@ var questionEL = document.querySelector("#questions");
 var answerChoiceEl = document.querySelector("#answer-choice");
 
 
+
+
+
+
 //Setup Start Quiz function
 
-var startQuiz = function() {
+var startQuiz = function(event) {
 
     // In the click event handler function make the heading "Coding Quiz!" and rules disappear
     if (hideStartQuiz === "none") {
@@ -21,29 +30,28 @@ var startQuiz = function() {
     // Return Quiz - Show the first question and set of answers 
 
 
-
-
 }; // End Start Quiz Function
 
 
-//     // Function to start a timer when "Start Quiz!" button is clicked.
-// document.getElementById("#start-btn").addEventListener("click", function() {
+    // // Function to start a timer when "Start Quiz!" button is clicked.
+    // document.getElementById("#start-btn").addEventListener("click");
 
-//     var timeLeft= 75;
+    // function countdown() {
+    //     var timeLeft= 75;
+    
+    //     var timeInterval = setInterval(function () {
+    //         document.getElementById("#time-left").innerHTML = timeLeft;
+    //         timeLeft --; 
+    //         if(timeLeft > 0) {
+    //             clearInterval(timeInterval);
+    //             alert("Sorry, out of time");
+    //         }
+    
+    //     }, 1000);
 
-//     var timeInterval = setInterval(function fucntion1() {
-//         document.getElementById("#time-left").innerHTML = timeLeft;
-//         timeLeft --; 
-//         if(timeLeft <= 0) {
-//             clearInterval(timeInterval);
-//             alert("Sorry, out of time");
-//         }
+    //         };
 
-//     }, 1000);
 
-//     console.log(countdown);
-
-//         });
 
     
  
