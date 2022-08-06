@@ -33,7 +33,7 @@ header {
 }
 
 nav a {
-    display: flex;
+    display: inline-flex;
     margin: 25px, 20px;
     padding: 15px;
     margin-left: 30px;
@@ -85,7 +85,6 @@ main p {
 }
 
 .btn {
-    margin: 45px, 25px;
     padding: 15px;
     background-color: rgb(77, 3, 77);
     font-size: 24px;
@@ -101,5 +100,38 @@ footer {
     display: flex;
     justify-content: center;
     border-top: 2px solid rgb(232, 232, 232);
-  
 }
+
+
+/* High Scores Page Styling */
+
+.high-scores {
+    margin: 40px, 25px;
+    padding: 15px, 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.high-scores h2 {
+    margin: 20px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.high-scores button {
+    display: inline-flex;
+    margin: 15px, 30px;
+    padding: 10px;
+    background-color: rgb(77, 3, 77);
+    font-size: 24px;
+    color: #fff;
+}
+
+.high-scores button a {
+    color: #fff;
+    text-decoration: none;
+}
+
