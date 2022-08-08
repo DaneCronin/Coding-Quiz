@@ -1,3 +1,15 @@
+// create variables to be used for multiple choice quiz:
+var startQuizEl = document.querySelector("#start-btn");
+var timeLeftEl = document.querySelector("#time-left");
+var hideStartQuiz = document.querySelector("#start");
+var questionEL = document.querySelector("#questions");
+var answerChoiceEl = document.querySelector("#answer-choice");
+
+
+
+
+
+
 // Create an array for all of the question objects
 var myQuestions = [
 	{
@@ -35,22 +47,11 @@ var myQuestions = [
 
 
 
-// create variables to be used for multiple choice quiz:
-var startQuizEl = document.querySelector("#start-btn");
-var timeLeftEL = document.querySelector("#time-left");
-var hideStartQuiz = document.querySelector("#start");
-var questionEL = document.querySelector("#questions");
-var answerChoiceEl = document.querySelector("#answer-choice");
-
-
-
-
-
 
 //Setup Start Quiz function
 
 var startQuiz = function(event) {
-
+    console.log("start quiz was initiated");
     // In the click event handler function make the heading "Coding Quiz!" and rules disappear
     if (hideStartQuiz === "none") {
         hideStartQuiz.style.display = "block";
@@ -60,28 +61,49 @@ var startQuiz = function(event) {
     };
      
     // Return Quiz - Show the first question and set of answers 
+function showQuestions (questions, quiz) {
 
+    //create array to store output and answer choices
+    var output = [];
+    var answers;
+
+    //for each question
+for (var i = 0; i < questions.length; i++) {
+    answers = [];
+
+for (letter in questions[i].answers) {
+
+}
+
+}
+
+}
 
 }; // End Start Quiz Function
 
 
-    // // Function to start a timer when "Start Quiz!" button is clicked.
-    // document.getElementById("#start-btn").addEventListener("click");
+    // Function to start a timer when "Start Quiz!" button is clicked.
+    startQuizEl.addEventListener("click", function() {
+        countdown();
+       startQuiz();
 
-    // function countdown() {
-    //     var timeLeft= 75;
-    
-    //     var timeInterval = setInterval(function () {
-    //         document.getElementById("#time-left").innerHTML = timeLeft;
-    //         timeLeft --; 
-    //         if(timeLeft > 0) {
-    //             clearInterval(timeInterval);
-    //             alert("Sorry, out of time");
-    //         }
-    
-    //     }, 1000);
+    });
 
-    //         };
+    function countdown() {
+        console.log("countdown function was called");
+        var timeLeft= 75;
+    
+        var timeInterval = setInterval(function () {
+            timeLeftEl.innerHTML = timeLeft;
+            timeLeft --; 
+            if(timeLeft <= 0) {
+                clearInterval(timeInterval);
+                alert("Sorry, out of time");
+            }
+    
+        }, 1000);
+
+            };
 
 
 
