@@ -118,13 +118,21 @@ footer {
 
 .high-score-container {
     display: flex;
-    align-items: left;
     background-color:  rgba(77, 3, 77, 0.2) ;
     border: 2px solid lightgray;
     width: 400px;
-    padding: 25px;
-    margin: 20px;
+    padding: 5px, 2px;
+    margin: 15px;
 
+}
+
+.high-score-list {
+    margin: 10px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    line-height: 1.6;
 }
 
 
