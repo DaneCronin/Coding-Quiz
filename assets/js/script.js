@@ -1,9 +1,10 @@
 // create variables to be used for multiple choice quiz:
-var startQuizEl = document.querySelector("#start-btn");
-var timeLeftEl = document.querySelector("#time-left");
-var hideStartQuiz = document.querySelector("#start");
-var questionEL = document.querySelector("#questions");
-var answerChoiceEl = document.querySelector("#answer-choice");
+
+var startQuizEl = document.querySelector("#start-btn"); // Start Quiz Button
+var timeLeftEl = document.querySelector("#time-left"); //countdown timer
+var hideStartQuiz = document.querySelector("#start"); // Starting screen of quiz with title and rules
+var quizEl = document.querySelector("#questions"); //quiz 
+var answerChoiceEl = document.querySelector("#answer-choice"); //results
 
 
 
@@ -47,7 +48,6 @@ var myQuestions = [
 
 
 
-
 //Setup Start Quiz function
 
 var startQuiz = function(event) {
@@ -58,53 +58,65 @@ var startQuiz = function(event) {
     }
     else {
         hideStartQuiz.style.display = "none";
-    };
-     
-    // Return Quiz - Show the first question and set of answers 
-function showQuestions (questions, quiz) {
+    }
 
-    //create array to store output and answer choices
-    var output = [];
-    var answers;
-
-    //for each question
-for (var i = 0; i < questions.length; i++) {
-    answers = [];
-
-for (letter in questions[i].answers) {
-
-}
-
-}
-
-}
-
+    quizQuestions();
 }; // End Start Quiz Function
 
 
-    // Function to start a timer when "Start Quiz!" button is clicked.
-    startQuizEl.addEventListener("click", function() {
-        countdown();
-       startQuiz();
-
-    });
-
-    function countdown() {
-        console.log("countdown function was called");
-        var timeLeft= 75;
+    // Return Quiz - Show the first question and set of answers 
+function quizQuestions() {
+    console.log("quiz questions");
     
-        var timeInterval = setInterval(function () {
-            timeLeftEl.innerHTML = timeLeft;
-            timeLeft --; 
-            if(timeLeft <= 0) {
-                clearInterval(timeInterval);
-                alert("Sorry, out of time");
-            }
+    //create array to store all of the output and answer choices
+    var output = []; 
+    //variable to store all of the answers
+    var answers = [];  
+    //for each question, iterate through with for loop
     
-        }, 1000);
+    for (var i = 0; i < myQuestions.length; i++) {
+      
+        //console.log("QUESTION");
+        answers = []; //reset the answers
 
-            };
+        // for each available answer to this question
+        for(letter in myQuestions[i].answers) {
 
+
+        }
+    }
+
+   
+}; // End return quiz function
+  
+
+
+
+
+  // Function to start a timer when "Start Quiz!" button is clicked.
+  startQuizEl.addEventListener("click", function() {
+    countdown();
+   startQuiz();
+
+});
+
+function countdown() {
+    console.log("countdown function was called");
+    var timeLeft= 75;
+
+    var timeInterval = setInterval(function () {
+        timeLeftEl.innerHTML = timeLeft;
+        timeLeft --; 
+        if(timeLeft <= 0) {
+            clearInterval(timeInterval);
+            alert("Sorry, out of time");
+        }
+
+    }, 1000);
+
+        };
+
+  
 
 
     
@@ -137,5 +149,3 @@ for (letter in questions[i].answers) {
 
 
 // Create function to load the stored high scores on high-scores.html page
-
-
