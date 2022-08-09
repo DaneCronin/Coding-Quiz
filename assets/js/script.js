@@ -73,20 +73,36 @@ function quizQuestions() {
     //variable to store all of the answers
     var answers = [];  
     //for each question, iterate through with for loop
-    
+
     for (var i = 0; i < myQuestions.length; i++) {
       
         //console.log("QUESTION");
         answers = []; //reset the answers
 
-        // for each available answer to this question
-        for(letter in myQuestions[i].answers) {
+        // for each available answer to this question...
+        for(letter in myQuestions[i].answers){
 
+			// ...add question buttons
+			answers.push(
+				'<label>'
+					+ '<input type="button" name="question'+i+'" value="'+letter+'">'
+					+ letter + ': '
+					+ myQuestions[i].answers[letter]
+				+ '</label>'
+			);
+		}
 
-        }
-    }
+		// add this question and its answers to the output
+		output.push(
+			'<div class="question">' + myQuestions[i].question + '</div>'
+			+ '<div class="answers">' + answers.join('') + '</div>'
+		);
+	}
+    //combine output list into one string of html and put it on the page
+	quizEl.innerHTML = output.join('');
 
-   
+     quizQuestions(myQuestions, quizEl);
+
 }; // End return quiz function
   
 
