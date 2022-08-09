@@ -108,7 +108,6 @@ function quizQuestions() {
 
 
 
-
   // Function to start a timer when "Start Quiz!" button is clicked.
   startQuizEl.addEventListener("click", function() {
     countdown();
@@ -122,8 +121,8 @@ function countdown() {
 
     var timeInterval = setInterval(function () {
         timeLeftEl.innerHTML = timeLeft;
-        timeLeft --; 
-        if(timeLeft <= 0) {
+        timeLeft -- ; 
+        if (timeLeft <= 0) {
             clearInterval(timeInterval);
             alert("Sorry, out of time");
         }
@@ -161,7 +160,7 @@ function countdown() {
     //When all questions have been answered or timer runs out, user can save name and score
 
 
-// Create function to store and save user's name and score to High Scores list
+// Create function to store and save user's name and score to High Scores lists
 
 
 // Create function to load the stored high scores on high-scores.html page
