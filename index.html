@@ -27,10 +27,10 @@
     </header>
 
     <!-- Main Body of Page -->
-    <main class ="wrapper">
+    <main class="wrapper">
 
         <!-- Section for "Start Quiz Display"-->
-        <section class="start-quiz" id ="start">
+        <section class="start-quiz" id="start">
 
             <h1>CODING QUIZ!</h1>
 
@@ -51,8 +51,13 @@
 
             <h3 id="question-title"></h3>
 
-            <div class="answers" id="answer-choice">
-
+            <div class="answer-buttons">
+                <ol id="answer-choice">
+                    <li id="a"><button class="btn">Answer A</button></li>
+                    <li id="b"><button class="btn">Answer B</button></li>
+                    <li id="c"><button class="btn">Answer C</button></li>
+                    <li id="d"><button class="btn">Answer D</button></li>
+                </ol>
             </div>
 
         </section>
@@ -61,7 +66,7 @@
 
         <section class="quiz" id="end-screen">
             <h1 id="end-quiz-title"></h1>
-        <!-- Section for user to input and save score and initials-->
+            <!-- Section for user to input and save score and initials-->
             <div class="final-score">
                 <p><span id="user-score"></span></p>
             </div>

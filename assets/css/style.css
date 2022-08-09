@@ -120,9 +120,9 @@ footer {
     display: flex;
     background-color:  rgba(77, 3, 77, 0.2) ;
     border: 2px solid lightgray;
-    width: 400px;
     padding: 5px, 2px;
     margin: 15px;
+    min-width: 347px;
 
 }
 
@@ -133,6 +133,8 @@ footer {
     justify-content: left;
     flex-direction: column;
     line-height: 1.6;
+    font-family: var(--font-family);
+    font-size: 18px;
 }
 
 
@@ -144,6 +146,7 @@ footer {
 
 .high-scores button {
     display: inline-flex;
+    align-items: left;
     margin: 25px, 15px, 20px, 30px;
     padding: 10px;
     background-color: rgb(77, 3, 77);
