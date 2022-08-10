@@ -7,6 +7,7 @@ var quizEl = document.querySelector("#questions"); //quiz container element
 var questionTitle = document.querySelector("#question-title") // Actual Question
 var answerButtons = document.querySelector(".answer-buttons") // Div element to hold ordered list of answer buttons
 // var answerChoiceEl = document.querySelector("#answer-choice"); // Possible Answer Choice Buttons
+var endQuizEl = document.querySelector("#end-screen")// End of Quiz screen to show score and input for user name to save score
 var currentIndex = 0
     // Variable to store the score
     var score = [];
@@ -62,11 +63,13 @@ var startQuiz = function (event) {
     if (hideStartQuiz === "none") {
         hideStartQuiz.style.display = "block";
         quizEl.style.display = "none";
+        endQuizEl.classList.add('hide');
 
     }
     else {
         hideStartQuiz.style.display = "none";
         quizEl.style.display = "block";
+        endQuizEl.classList.add('hide');
 
     }
 
@@ -133,11 +136,11 @@ function selectAnswer() {
             //Get answer choice and compare to answer
             // If it is the wrong answer, deduct 10 seconds from timer
             if (currentAnswer !== clickedAnswer)  {
-                timeLeft -= 10
+                timeLeft -= 10} else {
                 // If it is correct answer, add points and show next question and choices.
 
                  score ++;
-            } 
+            } ;
             currentIndex++
             if(currentIndex === myQuestions.length){
                 endQuiz();
@@ -150,22 +153,18 @@ function selectAnswer() {
 // Create function for end of quiz when all questions have been answered or time has run out.
 function endQuiz() {
     console.log("End Quiz");
+    endQuizEl.style.display = "block";
     // if (timeLeft == 0 || currentIndex == myQuestions.length) {
 
-    // }
+    //  }
 }
 
+  //When all questions have been answered or timer runs out, user can save name and score
 
-    //When all questions have been answered or timer runs out, user can save name and score
+//Create function to store and save user's name and score to High Scores lists
+function highScore() {
+var newScoreObj = {score: timeLeft , initials}
 
-   
-// Create function to store and save user's name and score to High Scores lists
-
- // var newScoreObj = {score: timeLeft , initials}
-
-    // var highScores = JSON.parse(localStorage.getItems('Highscores')) || []
-
+var highScores = JSON.parse(localStorage.getItems('Highscores')) || []
+};
     
-// Create function to load the stored high scores on high-scores.html page
-// highScores.push(newScoreObj)
-    // localStorage.setItem('Highscores', JSON.stringify(highScores))
