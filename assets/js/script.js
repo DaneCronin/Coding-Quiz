@@ -100,10 +100,6 @@ function countdown() {
 
 
 
-
-
-
-
 // Setup a questions function to display question with answer choices.
 function quizQuestions() {
     console.log("Quiz Question Started");
@@ -121,9 +117,9 @@ function quizQuestions() {
 
         });
 
-    // If it is the wrong answer, deduct 10 seconds from timer
+    
 
-    // If it is correct answer, add points and show next question and choices.
+    
 
 }; // End quizQuestions Function
 
@@ -135,32 +131,41 @@ function selectAnswer() {
         console.log(`ClickedAnswer: ${clickedAnswer}
         CorrectAnswer: ${currentAnswer}`)
             //Get answer choice and compare to answer
+            // If it is the wrong answer, deduct 10 seconds from timer
             if (currentAnswer !== clickedAnswer)  {
                 timeLeft -= 10
                 // If it is correct answer, add points and show next question and choices.
 
-                //  score ++;
+                 score ++;
             } 
             currentIndex++
             if(currentIndex === myQuestions.length){
-                // end quiz Function
+                endQuiz();
             } else {
                 quizQuestions()
             }
 
         }
 
-// Create function to run all questions or if timer runs out, game is over.
+// Create function for end of quiz when all questions have been answered or time has run out.
+function endQuiz() {
+    console.log("End Quiz");
+    // if (timeLeft == 0 || currentIndex == myQuestions.length) {
+
+    // }
+}
+
 
     //When all questions have been answered or timer runs out, user can save name and score
 
-    var newScoreObj = {score: timeLeft , initials}
-
-    var highScores = JSON.parse(localStorage.getItems('Highscores')) || []
-
-    highScores.push(newScoreObj)
-    localStorage.setItem('Highscores', JSON.stringify(highScores))
+   
 // Create function to store and save user's name and score to High Scores lists
 
+ // var newScoreObj = {score: timeLeft , initials}
 
+    // var highScores = JSON.parse(localStorage.getItems('Highscores')) || []
+
+    
 // Create function to load the stored high scores on high-scores.html page
+// highScores.push(newScoreObj)
+    // localStorage.setItem('Highscores', JSON.stringify(highScores))
