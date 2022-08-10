@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Page Styling Variables */
+:root {
+    --font-family: Helvetica, Arial, sans-serif;
+    --primary-bgcolor: #fff;
+    --font-color: #000;
+    --primary-stylecolor: rgb(77, 3, 77);
+}
+
+/* General Body Styling */
+main {
+    background-color: var(--primary-bgcolor);
+    color: var(--font-color);
+    font-family: var(--font-family);
+    height: 600px;
+    width: auto;
+
+}
+
+/* Header and Nav Styling for High Scores Page Link */
+
+header {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px, 35px;
+    background-color: rgb(232, 232, 232);
+}
+
+nav a {
+    display: inline-flex;
+    margin: 25px, 20px;
+    padding: 15px;
+    margin-left: 30px;
+    text-decoration: none;
+    font-family: var(--font-family);
+    color: rgb(77, 3, 77);
+    
+}
+
+.timer {
+    display: inline-flex;
+    padding: 15px;
+    margin: 25px, 20px;
+    margin-right: 30px;
+    font-family: var(--font-family);
+}
+
+
+
+
+/* Start Quiz Section Styling */
+
+.start-quiz {
+    margin: 40px, 20px;
+    padding: 15px, 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.start-btn {
+    margin: 45px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    margin: 20px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+main p {
+    text-align: center;
+    font-size: 22px;
+
+}
+
+.btn {
+    padding: 15px;
+    background-color: rgb(77, 3, 77);
+    font-size: 24px;
+    color: #fff;
+
+}
+
+/* Quiz Questions and Answer Buttons Section Styling */
+
+.quiz {
+    margin: 40px, 25px;
+    padding: 20px, 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.quiz h3 {
+    margin: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.answer-section {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.answer-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 275px;
+    padding: 0, 15px;
+}
+
+.btn {
+    margin: 10px;
+}
+
+
+/* End Quiz Styling */
+
+.end-quiz {
+    margin: 40px, 20px;
+    padding: 15px, 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+
+
+/* High Scores Page Styling */
+
+.high-scores {
+    margin: 20px, 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+
+}
+
+.high-score-container {
+    display: flex;
+    background-color:  rgba(77, 3, 77, 0.2) ;
+    border: 2px solid lightgray;
+    padding: 5px, 2px;
+    margin: 15px;
+    min-width: 347px;
+
+}
+
+.high-score-list {
+    margin: 10px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    line-height: 1.6;
+    font-family: var(--font-family);
+    font-size: 18px;
+}
+
+
+.high-scores h2 {
+    margin: 25px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.high-scores button {
+    display: inline-flex;
+    align-items: left;
+    margin: 25px, 15px, 20px, 30px;
+    padding: 10px;
+    background-color: rgb(77, 3, 77);
+    font-size: 24px;
+    color: #fff;
+    
+}
+
+.high-scores button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Footer Styling */
+
+footer {
+    margin: 45px, 25px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid rgb(232, 232, 232);
+}

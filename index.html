@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Coding Quiz!</title>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+
+        <!-- Navigation to High Scores -->
+        <nav>
+
+            <a href="./high-scores.html">View High Scores</a>
+
+        </nav>
+
+        <div class="timer">Time: <span id="time-left"> 0 </span></div>
+
+
+    </header>
+
+    <!-- Main Body of Page -->
+    <main class="wrapper">
+
+        <!-- Section for "Start Quiz Display"-->
+        <section class="start-quiz" id="start">
+
+            <h1>CODING QUIZ!</h1>
+
+
+            <p>Try to answer the following code-related questions within the time limit.
+                <br>Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+            </p>
+
+            <div class="start-btn">
+                <button class="btn" id="start-btn">Start Quiz!</button>
+            </div>
+
+
+        </section>
+
+        <!-- Section for Quiz Questions -->
+        <section class="quiz" id="questions">
+
+            <h3 id="question-title"></h3>
+            <div class="answer-section">
+                <div class="answer-buttons">
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section for end screen after all questions are answered, time ran out -->
+
+        <section class="end-quiz" id="end-screen">
+            <h1 id="end-quiz-title"></h1>
+            <!-- Section for user to input and save score and initials-->
+            <div class="final-score">
+                <p><span id="user-score"></span></p>
+            </div>
+            <input id="initialsInput" type="text">
+            <button id="submitButton" type="submit">Submit Your Initials</button>
+        </section>
+
+    </main>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+        &copy;2022 by Dane Cronin
+
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
