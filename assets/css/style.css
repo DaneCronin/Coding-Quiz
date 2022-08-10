@@ -54,7 +54,7 @@ nav a {
 
 
 
-/* Question Section Styling */
+/* Start Quiz Section Styling */
 
 .start-quiz {
     margin: 40px, 20px;
@@ -94,15 +94,55 @@ main p {
 
 }
 
-/* Footer Styling */
+/* Quiz Questions and Answer Buttons Section Styling */
 
-footer {
-    margin: 45px, 25px;
-    padding: 20px;
+.quiz {
+    margin: 40px, 25px;
+    padding: 20px, 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.quiz h3 {
+    margin: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.answer-section {
     display: flex;
     justify-content: center;
-    border-top: 2px solid rgb(232, 232, 232);
+    
 }
+
+.answer-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 275px;
+    padding: 0, 15px;
+}
+
+.btn {
+    margin: 10px;
+}
+
+
+/* End Quiz Styling */
+
+.end-quiz {
+    margin: 40px, 20px;
+    padding: 15px, 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
 
 
 /* High Scores Page Styling */
@@ -160,3 +200,13 @@ footer {
     text-decoration: none;
 }
 
+
+/* Footer Styling */
+
+footer {
+    margin: 45px, 25px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid rgb(232, 232, 232);
+}
