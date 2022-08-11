@@ -156,8 +156,12 @@ function selectAnswer() {
 // Create function for end of quiz when all questions have been answered or time has run out.
 function endQuiz() {
     console.log("End Quiz");
-    quizEl.style.display = "none";
+
+    var score = [score, timeLeft];
+    quizEl.style.display = "none"
     endQuizEl.style.display = "block";
+
+
    
     // if (timeLeft == 0 || currentIndex == myQuestions.length) {
 
@@ -170,6 +174,6 @@ function endQuiz() {
 function highScore() {
 var newScoreObj = {score: timeLeft , initials}
 
-var highScores = JSON.parse(localStorage.getItems('Highscores')) || []
+var highScores = JSON.stringify(localStorage.setItems('Highscores')) || []
 };
     
