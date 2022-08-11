@@ -7,7 +7,7 @@ var quizEl = document.querySelector("#questions"); //quiz container element
 var questionTitle = document.querySelector("#question-title") // Actual Question
 var answerButtons = document.querySelector(".answer-buttons") // Div element to hold ordered list of answer buttons
 // var answerChoiceEl = document.querySelector("#answer-choice"); // Possible Answer Choice Buttons
-var endQuizEl = document.querySelector("#end-screen")// End of Quiz screen to show score and input for user name to save score
+var endQuizEl = document.querySelector(".end-quiz")// End of Quiz screen to show score and input for user name to save score
 var currentIndex = 0
     // Variable to store the score
     var score = [];
@@ -55,21 +55,24 @@ var myQuestions = [
 
 
 //Setup Start Quiz function
+endQuizEl.style.display = "none";
+quizEl.style.display = "none";
 
 var startQuiz = function (event) {
     console.log("start quiz was initiated");
+    
 
     // In the click event handler function make the heading "Coding Quiz!" and rules disappear
     if (hideStartQuiz === "none") {
         hideStartQuiz.style.display = "block";
         quizEl.style.display = "none";
-        endQuizEl.classList.add('hide');
+        
 
     }
     else {
         hideStartQuiz.style.display = "none";
         quizEl.style.display = "block";
-        endQuizEl.classList.add('hide');
+       
 
     }
 
@@ -138,7 +141,7 @@ function selectAnswer() {
             if (currentAnswer !== clickedAnswer)  {
                 timeLeft -= 10} else {
                 // If it is correct answer, add points and show next question and choices.
-
+        
                  score ++;
             } ;
             currentIndex++
@@ -147,13 +150,15 @@ function selectAnswer() {
             } else {
                 quizQuestions()
             }
-
+        
         }
 
 // Create function for end of quiz when all questions have been answered or time has run out.
 function endQuiz() {
     console.log("End Quiz");
+    quizEl.style.display = "none";
     endQuizEl.style.display = "block";
+   
     // if (timeLeft == 0 || currentIndex == myQuestions.length) {
 
     //  }

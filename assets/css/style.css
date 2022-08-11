@@ -40,7 +40,7 @@ nav a {
     text-decoration: none;
     font-family: var(--font-family);
     color: rgb(77, 3, 77);
-    
+
 }
 
 .timer {
@@ -114,7 +114,7 @@ main p {
 .answer-section {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .answer-buttons {
@@ -132,18 +132,52 @@ main p {
 
 /* End Quiz Styling */
 
-.end-quiz {
-    margin: 40px, 20px;
-    padding: 15px, 20px;
+.final-score {
+   
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     flex-direction: column;
+
+}
+
+.end-quiz {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    margin: 40px, 20px;
+    padding: 15px, 20px;
+    
+}
+
+.end-quiz h1 {
+    margin: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
 }
 
 
+#initialsInput {
+    align-items: center;
+    background-color: rgba(77, 3, 77, 0.2);
+    margin: 10px;
+    padding-left: 20px;  
+    line-height: 1.6;
+    font-family: var(--font-family);
+    font-size: 18px;
+    width: 250px;
+}
 
+.end-quiz .btn {
+  
+    width: 250px;
+    display: flex;
+    align-items: center;
+
+}
 
 /* High Scores Page Styling */
 
@@ -158,7 +192,7 @@ main p {
 
 .high-score-container {
     display: flex;
-    background-color:  rgba(77, 3, 77, 0.2) ;
+    background-color: rgba(77, 3, 77, 0.2);
     border: 2px solid lightgray;
     padding: 5px, 2px;
     margin: 15px;
@@ -192,7 +226,7 @@ main p {
     background-color: rgb(77, 3, 77);
     font-size: 24px;
     color: #fff;
-    
+
 }
 
 .high-scores button a {
